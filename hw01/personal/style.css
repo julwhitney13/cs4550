@@ -1,0 +1,39 @@
+html {
+    background: url("resources/italybackground.jpg") no-repeat center center fixed;
+}
+
+body {
+    font-family: "Trebuchet MS";
+    text-align: center;
+}
+
+h1 {
+    color: #B54E3F;
+}
+
+h3 {
+    color: #0C2543;
+}
+
+p {
+    font-size: 18px;
+    color: #0C2543;
+}
+
+#picofme {
+    height: 200px;
+    margin: 10px;
+}
+
+a {
+    font-style: italic;
+}
+
+.whitebox {
+    margin-top: 100px;
+    margin-left: 100px;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 500px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
