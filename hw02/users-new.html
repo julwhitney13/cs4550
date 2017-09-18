@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <title>Design for HW02</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-light bg-faded navbar-expand-md">
+        <a class="navbar-brand" href="#">Blogger</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="main-navbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Profile</a>
+                </li>
+            </ul>
+
+
+            <form class="form-inline navbar-form navbar-right" role="search">
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-info" value="Log in">Log In</button>
+                </div>
+            </form>
+
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md">
+        <h2>User First Design</h2>
+            <ul>
+                <li>As a new user, I should be able to create an account. (/new)
+                    <ul>
+                        <li>There will be a page where I can enter my name, email address, username, and create and verify a password.</li>
+                        <li>When I submit the form, I will receive an email that requests me to verify my email address.</li>
+                        <li>Upon this link being clicked, a profile will be created for me.</li>
+                    </ul>
+                </li>
+                <li>As a user or non-user (member of public), I should be able to view a profile (/show?profile=xxx)
+                    <ul>
+                        <li>A user's profile will contain their name, their user name, their profile picture, a short description they set, their follower count, and their following count.</li>
+                        <li>Clicking on their follower or following count will bring you to me to a list of their followers (described in a story below).</li>
+                        <li>Underneath the profile, there will be their posts in order of most to least recent. See user story below.</li>
+                        <li>If the profile I'm viewing is my profile and I am logged in, then there will be a create post and a modify profile button.</li>
+                        <li>If I'm a user logged in, I should be able to follow or unfollow the user from a button on their profile page.</li>
+                        <li>As a non-user (or user who is not logged in), I will see a "Log in or sign up" button at the top of the page.</li>
+                    </ul>
+                </li>
+                <li>As a user, I should be able to modify my profile (/edit?profile=xxx)
+                    <ul>
+                        <li>If I am logged in and viewing my own profile, there will be a button to edit my profile.</li>
+                        <li>From there, I can edit my name, user name, description, and email address.</li>
+                        <li>I can press "save changes" at the bottom of the form.</li>
+                    </ul>
+                </li>
+                <li>As a user, I should be able to view previews of my posts when I view my profile. (/show?profile=xxx)
+                    <ul>
+                        <li>When I go to my profile page, there will be my posts in order of most to least recent of post date (not modified date).</li>
+                        <li>Each "post preview" will contain the title of the post, the date it was posted, and a short description of the post if there was one set.</li>
+                        <li>When I click on a post preview/title, I will be brought to the full page of the post ("show" page, in user story below).</li>
+                    </ul>
+                </li>
+                <li>As a user OR a member of the public (non users), I should be able to view a post in totality (/show?postId=xxx)
+                    <ul>
+                        <li>A post in totality will show it's title, it's description, it's author, and it's content.</li>
+                        <li>At the bottom, there will be a date created. If the post was modified, there will be a date modified.</li>
+                        <li>The author's name and the @mentions in the post will hyperlink to the user's profile (/show?profile=xxx)</li>
+                        <li>There should be an "edit post" button at the top <i>if you</i> are the author of the post you are viewing</li>
+                        <li>As a non-user (or user who is not logged in), I will see a "Log in or sign up" button at the top of the page.</li>
+                    </ul>
+                </li>
+                <li>As a user, I should be able to create a new post. (/new)
+                    <ul>
+                        <li>From the index AND/OR profile page, there will be a "create post" button.</li>
+                        <li>This button will lead to a form where I can create a new post.</li>
+                        <li>The form will contain a text box for the title, a short description, and a large text box for the post's content.</li>
+                        <li>#Hashtags and @mentions will be supported in the content text box.</li>
+                        <li>I will click "create post" to create it</li>
+                    </ul>
+                </li>
+                <li>As a user, I would like to be able to modify one of my own posts. (/edit?postId=xx)
+                    <ul>
+                        <li>From the post's show page, I should be able to click "edit post" of one of my own posts.</li>
+                        <li>From there, I can edit the post's title, description, and content.</li>
+                        <li>There will be a "save updates" button at the bottom.</li>
+                        <li>After updating, the post will show an "edited" time stamp when viewed in totality, but the edit time will not affect it's rank on my profile.</li>
+                    </ul>
+                </li>
+                <li>As a user, I would like to view previews of the posts of the people I'm following (/index) all on one page
+                    <ul>
+                        <li>My main page or "timeline" will consist of previews of posts (mentioned above in profile) of people I follow.</li>
+                        <li>These will be ranked in order of most recent to least recent as I scroll.</li>
+                        <li>10 posts will be shown per page.</li>
+                        <li>If I click on the author's name in the preview, I will be brought to their profile. Otherwise, if I click anywhere in the preview, I will be brought to the full page of the post</li>
+                        <li>There will be a link to my profile page and a link to create a post from this index page as well</li>
+                    </ul>
+                </li>
+                <li>As a user, I would like to view a list of my followers or people I am following.
+                    <ul>
+                        <li>When on my profile, if I click my follower or following count, I will be brought to a list of my followers.</li>
+                        <li>The list will show their profile picture, their name, and their user name in a preview.</li>
+                        <li>Each preview will link to their profile page.</li>
+                    </ul>
+                </li>
+                <li>As a user, I would like to be able to follow or unfollow an account.
+                    <ul>
+                        <li>When viewing a profile that is not my own, I would like to see a button that says "follow" if I am not currently following them, or "unfollow" if I am.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md">
+          <h2>Data First Design</h2>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body>
+</html>
