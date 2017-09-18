@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
-    <title>New User</title>
+    <title>New post</title>
 </head>
 <body>
 
@@ -45,49 +45,31 @@
     <!-- Referenced some code from the Bootstrap 4 docs for forms here: https://v4-alpha.getbootstrap.com/components/forms/ -->
     <div class="container my-5">
         <div class="row mb-3">
-            <h1>Create a new account</h1>
+            <h1>New post</h1>
         </div>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <form>
                   <div class="form-group">
-                      <label for="profilePicture">Profile picture</label>
-                      <input type="file" class="form-control-file" id="profilePicture" aria-describedby="fileHelp">
-                      <small id="fileHelp" class="form-text text-muted">Upload a photo of yourself to be viewed on your profile.</small>
+                      <label for="postTitle">Post Title</label>
+                      <input type="text" class="form-control" id="postTitle" placeholder="Title of your post">
                   </div>
                   <div class="form-group">
-                      <label for="firstName">First name</label>
-                      <input type="text" class="form-control" id="firstName" placeholder="First name">
+                      <label for="postDescription">Post description</label>
+                      <textarea class="form-control" id="postDescription" rows="2" placeholder="A short description about your post / a sub-header"></textarea>
                   </div>
                   <div class="form-group">
-                      <label for="lastName">Last name</label>
-                      <input type="text" class="form-control" id="lastName" placeholder="Last name">
+                      <label for="hashtags">Tags</label>
+                      <textarea class="form-control" id="hashtags" rows="2" placeholder="#fashion, #tech"></textarea>
+                      <small id="emailHelp" class="form-text text-muted">Please enter all hashtags seperated by a comma</small>
                   </div>
-                  <div class="form-group">
-                      <label for="biography">Biography</label>
-                      <textarea class="form-control" id="biography" rows="3" placeholder="Enter a short description about yourself"></textarea>
-                  </div>
+                  <button type="submit" class="btn btn-info mt-3">Create Post</button>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-8">
                 <div class="form-group">
-                    <label for="inputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="inputEmail1" placeholder="Enter email">
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    <label for="postContent">Content</label>
+                    <textarea class="form-control" id="postContent" rows="18" placeholder="Compose your post here..."></textarea>
                 </div>
-                <div class="form-group">
-                    <label for="inputPassword">Password</label>
-                    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-                </div>
-                <div class="form-group">
-                    <label for="inputPassword2">Verify Password</label>
-                    <input type="password" class="form-control" id="inputPassword2" placeholder="Retype Password">
-                </div>
-                <label for="chooseUsername">Username</label>
-                <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-                    <div class="input-group-addon">@</div>
-                    <input type="text" class="form-control" id="chooseUsername" placeholder="Username">
-                </div>
-                <button type="submit" class="btn btn-info mt-3">Create Account</button>
                 </form>
             </div>
         </div>
