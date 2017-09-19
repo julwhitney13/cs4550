@@ -8,4 +8,4 @@ Kim Whitney
 www.sorryiateallyourpancakes.com
 
 ### HW02 Link
-[HW02](www.hw02.sorryiateallyourpancakes.com)
+www.hw02.sorryiateallyourpancakes.com
