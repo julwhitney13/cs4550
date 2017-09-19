@@ -1,0 +1,10 @@
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 5;
+  }
+}
+
+/* Referenced css styling for .card-columns on BootStrap Docs here: https://v4-alpha.getbootstrap.com/components/card/ */
