@@ -143,6 +143,31 @@
                         <li>Created at</li>
                         <li>Profile description</li>
                         <li>Profile photo</li>
+                        <li>Routes:
+                            <ul>
+                                <li>/create
+                                    <ul><li>Success page after creating a new user account. "Account created"</li></ul>
+                                </li>
+                                <li>/show
+                                    <ul><li>A page to view the user's profile</li></ul>
+                                </li>
+                                <li>/update
+                                    <ul><li>Shows a success dialog over the profile you  just edited. "Account edited successfully".</li></ul>
+                                </li>
+                                <li>/delete
+                                    <ul><li>Returns to index page of main blog site and says "Account deleted"</li></ul>
+                                </li>
+                                <li>/edit
+                                    <ul><li>Form to edit the user's account - name, bio, username, description</li></ul>
+                                </li>
+                                <li>/new
+                                    <ul><li>Create an account form for name, bio, username, password, email, picture</li></ul>
+                                </li>
+                                <li>/index
+                                    <ul><li>Show a list of user accounts (previews of them)</li></ul>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
                 <li>Posts
@@ -156,6 +181,31 @@
                         <li>Array of hashtags included</li>
                         <li>Array of user IDs mentioend</li>
                         <li>Post ID #</li>
+                        <li>Routes:
+                            <ul>
+                                <li>/create
+                                    <ul><li>Success page after creating a new post - "posted" - shows post in totality (/show)</li></ul>
+                                </li>
+                                <li>/show
+                                    <ul><li>Show the new post created with full content and details</li></ul>
+                                </li>
+                                <li>/update
+                                    <ul><li>Shows a success dialog over the post you just edited. "Post edited successfully".</li></ul>
+                                </li>
+                                <li>/delete
+                                    <ul><li>Returns to your main profile page (/show?userId=you) "Post deleted"</li></ul>
+                                </li>
+                                <li>/edit
+                                    <ul><li>Form to edit the post - content, tags, title, description</li></ul>
+                                </li>
+                                <li>/new
+                                    <ul><li>Form to create a new post - title, description, content, tags</li></ul>
+                                </li>
+                                <li>/index
+                                    <ul><li>A timeline of previews of recent posts</li></ul>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
             </ul>
